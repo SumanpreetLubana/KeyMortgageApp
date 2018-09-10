@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "281806839579",
+    "firebase_url": "https://keymortgage-9ff57.firebaseio.com",
+    "project_id": "keymortgage-9ff57",
+    "storage_bucket": "keymortgage-9ff57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281806839579:android:fb309f0c99e2ca80",
+        "android_client_info": {
+          "package_name": "com.example.smartserve.keymortgageapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281806839579-jvnivr31odpb63r1lsoce73ld9pli3ik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartserve.keymortgageapp",
+            "certificate_hash": "ec463bc3c4d1012c254ba4f5029ed3d813847f94"
+          }
+        },
+        {
+          "client_id": "281806839579-rnpcove2klkf4eblgknnn9mksi6c51c2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbUvwcmIqs0KZhpdrrhyWgl_IjGqPMWrk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281806839579-rnpcove2klkf4eblgknnn9mksi6c51c2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

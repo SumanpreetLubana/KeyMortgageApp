@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserDashboardActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#474746 "
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Key Mortgage"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center"
+                />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+<ImageView
+    android:layout_width="match_parent"
+    android:src="@drawable/dash_img"
+    android:layout_height="200dp" />
+    <LinearLayout
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@color/backcolor"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/showCalculator"
+                android:layout_marginLeft="20dp"
+                android:text="Calculator"
+               android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="50dp"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/notification"/>
+           <ImageView
+               android:layout_alignParentEnd="true"
+    android:src="@drawable/red_circle"
+               android:visibility="gone"
+    android:layout_width="10dp"
+    android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/tx2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginLeft="120dp"
+                android:fontFamily="sans-serif"
+                android:layout_toEndOf="@+id/showCalculator"
+                android:text="All"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/tx3"
+                android:layout_toEndOf="@+id/tx2"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text="View"
+                android:fontFamily="sans-serif"
+                android:layout_centerVertical="true"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toEndOf="@+id/tx3"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text="Home"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    <include layout="@layout/content_user_dashboard" />
+
+    </LinearLayout>
+</LinearLayout>

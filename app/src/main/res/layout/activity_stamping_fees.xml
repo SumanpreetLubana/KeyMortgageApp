@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:background="@color/backcolor"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back"
+            android:src="@drawable/arrow"
+            android:tint="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_weight="3"
+            android:text="Stamping Fees"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/close"
+            android:layout_marginRight="10dp"
+            android:padding="13dp"
+            android:tint="@color/white"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:src="@drawable/close"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:id="@+id/align"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/tv1"
+                android:textColor="@color/backcolor"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Total Stamping Fees Payable"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Monthly Rental (MR)"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="15sp"
+                    android:textColor="@color/backcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/mr"
+                    android:textSize="10sp"
+                    android:textColor="#696868"
+                    android:fontFamily="sans-serif"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:hint="Monthly Rental (MR)"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d8d8d8"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Lease Period (Years)"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="15sp"
+                    android:textColor="@color/backcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/years"
+                    android:textSize="10sp"
+                    android:hint="Lease Period (Years)"
+                    android:textColor="#696868"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="1"
+                    android:maxLength="3"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d8d8d8"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Number of copy of Tenancy Agreement"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/backcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/noc"
+                    android:textSize="10sp"
+                    android:hint="1"
+                    android:fontFamily="sans-serif"
+                    android:inputType="numberDecimal"
+                    android:textColor="#696868"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:maxLength="4"
+                    android:backgroundTint="@android:color/transparent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d8d8d8"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Stamping Fee"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/backcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/sfee"
+                    android:textSize="10sp"
+                    android:text=""
+                    android:textColor="#696868"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d8d8d8"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/align"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/view"
+                android:layout_weight="0.01"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#d8d8d8"/>
+            <Button
+                android:id="@+id/calc"
+                android:layout_weight="0.09"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/backcolor"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_gravity="center_horizontal"
+                android:text="Calculate"
+                android:layout_height="35dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
